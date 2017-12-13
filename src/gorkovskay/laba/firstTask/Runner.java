@@ -26,25 +26,25 @@ public class Runner {
         int[] arr = new int[]{0,12,-1,-3,2,4};
 
         // создаем новый массив, который является отсартированным по возрастанию старым массивом
-        int[] newArr = increaseSort(arr);
+        int[] sortedArr = increaseSort(arr);
 
         //создаем массив без учета большего и меньшего элемента
-        int[] arr1 = new int[newArr.length - 2];
+        int[] newArr = new int[sortedArr.length - 2];
 
         //заполняем новый массив значениями, без учета большего и меньшего элемента
-        for(int i = 1; i < newArr.length - 1;i++ ){
-            arr1[i-1] = arr[i];
+        for(int i = 1; i < sortedArr.length - 1;i++ ){
+            newArr[i-1] = arr[i];
         }
 
         int count = 0;
 
         //через цикл for each складываем сумму всех элементов массива.
-        for(int tmp:arr1){
+        for(int tmp:newArr){
             count = count + tmp;
         }
-        
+
         //считаем среднее значение.
-        float average = (float)count/arr1.length;
+        float average = (float)count/newArr.length;
 
         System.out.println(average);
 
