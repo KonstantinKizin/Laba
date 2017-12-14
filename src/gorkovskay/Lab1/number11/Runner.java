@@ -7,8 +7,9 @@ public class Runner {
         Money money = new Money(3);
         money.setMoneyValue(10,1,3,5);
         Money money1 = new Money(3);
-        money.setMoneyValue(10,1,3,5);
-        System.out.println(new Action().add(money,money1));
+        money1.setMoneyValue(10,2,3,7);
+        Money exp = new Action().add(money,money1);
+        System.out.println(exp.getMoneyValue());
 
     }
 }

@@ -6,6 +6,11 @@ public class Money {
 
     private int value;
     private int realSize;
+    private Float moneyValue;
+
+    public Money(){
+
+    }
 
     public Money(int realSize) {
         this.realSize = realSize;
@@ -35,6 +40,18 @@ public class Money {
 
     public void setRealSize(int realSize) {
         this.realSize = realSize;
+    }
+
+    public Float getMoneyValue(){
+        return this.moneyValue;
+    }
+
+    public void setMoneyValue(Float moneyValue){
+        this.moneyValue = moneyValue;
+    }
+
+    public Float generateFloatMoneyValue(){
+       return new Float(this.toString());
     }
 
     public String toString(){

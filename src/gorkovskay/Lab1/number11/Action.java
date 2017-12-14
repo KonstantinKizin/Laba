@@ -4,12 +4,17 @@ public class Action {
 
     public Money add(Money a , Money b){
 
-
-        return null;
+        Money money = new Money();
+        Float result = a.generateFloatMoneyValue() + b.generateFloatMoneyValue();
+        money.setMoneyValue(result);
+        return money;
     }
 
     public Money substraction(Money a , Money b){
 
-        return null;
+        Money money = new Money();
+        Float result = a.generateFloatMoneyValue() - b.generateFloatMoneyValue();
+        money.setMoneyValue(result);
+        return money;
     }
 }
