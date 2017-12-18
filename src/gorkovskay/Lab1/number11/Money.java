@@ -51,6 +51,7 @@ public class Money {
     }
 
     public Float generateFloatMoneyValue(){
+
        return new Float(this.toString());
     }
 
